@@ -12,6 +12,11 @@ node('master')
 			sh "${scannerhome}/bin/sonar-scanner"
 		}
 	}
+	stage('deploy')
+	{
+		input('Are you sure?')
+		echo 'deploying'
+	}
 			
 }
 
