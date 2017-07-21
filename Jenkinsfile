@@ -1,10 +1,10 @@
 node('master')
 {
-	stage 'checkout'
+	stage ('checkout')
 	{
 		checkout scm
 	}
-	stage 'test'
+	stage ('test')
 	{
 		def scannerhome = tool 'SonarScanner';
 		withSonarQubeEnv('SonarQube')
