@@ -17,11 +17,6 @@ node('master')
 	{
 		//mail (to:'albertmario19@gmail.com', subject:'Pipeline test', body:'ini lagi nunggu gan, uda kelar');
 		input('Are you sure?')
-	}
-	
-	def notifystarted()
-	{
-		//emailext(subject:'Started', body:'uda mulai gan', recipientProviders: [[$class: 'DevelopersRecipientProvider'])
 	}	
 }
 
