@@ -21,7 +21,7 @@ node('master')
 	
 	def notifystarted()
 	{
-		emailext(subject:'Started', body:'uda mulai gan', recipientProviders: [[$class: 'DevelopersRecipientProvider'])
+		//emailext(subject:'Started', body:'uda mulai gan', recipientProviders: [[$class: 'DevelopersRecipientProvider'])
 	}	
 }
 
