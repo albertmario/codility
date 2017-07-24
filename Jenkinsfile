@@ -2,7 +2,7 @@ node('master')
 {
 	stage ('checkout')
 	{
-		notifystarted()
+		//notifystarted()
 		checkout scm
 	}
 	stage ('SonarQube testing')
@@ -15,7 +15,7 @@ node('master')
 	}
 	stage('deploy')
 	{
-		mail (to:'albertmario19@gmail.com', subject:'Pipeline test', body:'ini lagi nunggu gan, uda kelar');
+		//mail (to:'albertmario19@gmail.com', subject:'Pipeline test', body:'ini lagi nunggu gan, uda kelar');
 		input('Are you sure?')
 	}
 	
